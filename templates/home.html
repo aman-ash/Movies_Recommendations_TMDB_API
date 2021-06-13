@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% load static %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/search.css' %}"
+    />
+    <script src="{% static 'js/audio.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="sound"></div>
+
+    <h1>Search For a Movie you Like</h1>
+
+    {%csrf_token %}
+
+    <form action="result">
+      <input type="text" name="movie" placeholder="Search.." required /><br />
+
+      <button onclick="play1();" type="submit" class="btn first">Search</button>
+    </form>
+  </body>
+</html>

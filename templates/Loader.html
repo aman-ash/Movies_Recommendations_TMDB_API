@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% load static %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/day.css' %}" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/framework.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/contact_style.css' %}"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/text.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/popup_codepen.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/loader.css' %}"
+    />
+    <script src="{% static 'js/loader.js' %}"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+
+  <body style="background-color: rgb(225, 228, 227)">
+    <!--1st movie-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavi()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md1}}
+        </p>
+      </div>
+    </div>
+
+    <!--2nd movie-->
+    <div id="my" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md2}}
+        </p>
+      </div>
+    </div>
+
+    <!--3rd movie-->
+    <div id="mya" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNava()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md3}}
+        </p>
+      </div>
+    </div>
+
+    <!--4th movie-->
+    <div id="myb" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavb()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md4}}
+        </p>
+      </div>
+    </div>
+
+    <!--5th movie-->
+    <div id="myc" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavc()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md5}}
+        </p>
+      </div>
+    </div>
+
+    <!--6th movie-->
+    <div id="myd" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavd()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md6}}
+        </p>
+      </div>
+    </div>
+
+    <!--7th movie-->
+    <div id="mye" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNave()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md7}}
+        </p>
+      </div>
+    </div>
+
+    <!--8th movie-->
+    <div id="myf" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavf()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <p>
+          Overview : <br /><br />
+          {{md8}}
+        </p>
+      </div>
+    </div>
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNavi()"
+      >&#9776; open</span
+    >
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776; open</span
+    >
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNava()"
+      >&#9776; open</span
+    >
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNavb()"
+      >&#9776; open</span
+    >
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNavc()"
+      >&#9776; open</span
+    >
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNavd()"
+      >&#9776; open</span
+    >
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNave()"
+      >&#9776; open</span
+    >
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNavf()"
+      >&#9776; open</span
+    >
+  </body>
+</html>
