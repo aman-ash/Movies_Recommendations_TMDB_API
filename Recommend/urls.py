@@ -17,10 +17,17 @@ from django.contrib import admin
 from django.urls import path, include
 from Movies import views
 
+
+admin.site.site_header = "AMAN's Dashboard"
+admin.site.site_title = "Welcome to AMAN's Dashboard"
+admin.site.index_title = "Welcome to this Portal"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('result/', views.result, name='result'),
     path('test/', views.test, name='test'),
+    path('contact/', views.contact, name='contact'),
 
 ]

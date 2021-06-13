@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import requests
+from Movies.models import Contact
 from tmdbv3api import Movie
 from tmdbv3api import TMDb
 import imdb
@@ -21,6 +22,21 @@ def home(request):
 
 def test(request):
     return render(request, 'api.html')
+
+
+def contact(request):
+    if request.method == "POST":
+
+        name = request.POST['name']
+        email = request.POST['email']
+        number = request.POST['number']
+        desc = request.POST['desc']
+        #print(name, email, phone, desc)
+        ins = Contact(name=name, number=number, email=email, desc=desc)
+        ins.save()
+        print("the data has been written inside the database")
+
+    return render(request, 'contact.html')
 
 
 def result(request):

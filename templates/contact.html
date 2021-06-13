@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% load static %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/contact.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/day.css' %}"
+    />
+
+    <script src="{% static 'js/jquery-3.4.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+
+  <div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <!-- Navbar brand -->
+        
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#basicExampleNav"
+          aria-controls="basicExampleNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about"></a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="/contact">Contact Me</a>
+            </li>
+          </ul>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+      </div>
+    </nav>
+    <!--/.Navbar-->
+  </div>
+
+ 
+  
+    <div>
+    <h1></h1>
+    </div>
+    <div id="form">
+    
+    <div class="fish" id="fish"></div>
+    <div class="fish" id="fish2"></div>
+
+    
+    <form action="" id="waterform" method="POST">
+        {%csrf_token%}
+      <div class="formgroup" id="name-form">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="formgroup" id="name-form">
+        <label for="number">Your Phone No.</label>
+        <input type="text"  name="number" />
+      </div>
+
+      <div class="formgroup" id="email-form">
+        <label for="email">Your e-mail*</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      
+      <div class="formgroup" id="message-form">
+        <label for="message">Your message</label>
+        <textarea id="message" name="desc"></textarea>
+      </div>
+
+      <input type="submit" value="Send your message!" />
+    </form>
+  </div>
+     
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+
+      <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">•	I here propose a system to  find users movies That they would like.</br>
+            •	I have use an efficient method to discover The recommendations of Movies by Using Similarity Score (SS).</br>
+            •	For the front end I have used HTML + CSS + JS and some custom animation,</br>• as per the back end I hve used Django.</br>
+           
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Technologies Used</h6>
+            <ul class="footer-links">
+              <li><a>Python</a></li>
+              <li><a>Machine Learning</a></li>
+              <li><a>Django</a></li>
+              <li><a>Java Script</a></li>
+              <li><a>TMDB API</a></li>
+              <li><a>HTML</a></li>
+              <li><a>CSS</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="https://js0sz6iaesrssjmgg7qnea-on.drv.tw/www.amanmahore.tk/">My Website</a></li>
+              <li><a href="https://www.linkedin.com/in/aman-mahore-367875176/">LinkedIn</a></li>
+              <li><a href="https://github.com/aman-ash">Github</a></li>
+              <li><a href="https://www.instagram.com/aman_mahore_official/">Instagram</a></li>
+              <li><a href="https://twitter.com/mahore_aman">Twitter</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+         <a>AMAN</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              
+              <li><a class="dribbble" href="https://js0sz6iaesrssjmgg7qnea-on.drv.tw/www.amanmahore.tk/"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/in/aman-mahore-367875176/"><i class="fa fa-linkedin"></i></a></li> 
+              <li><a class="facebook" href="https://www.instagram.com/aman_mahore_official/"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/mahore_aman"><i class="fa fa-twitter"></i></a></li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+  </body>
+</html>
