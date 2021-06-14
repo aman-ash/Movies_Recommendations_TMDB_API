@@ -48,6 +48,11 @@
       type="text/css"
       href="{% static 'css/styles.css' %}"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/popupc.css' %}"
+    />
 
     <script src="{% static 'js/jquery-3.4.1.slim.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
@@ -97,10 +102,16 @@
               <a class="nav-link" href="/">Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about"></a>
+              <a class="nav-link" href="##"></a>
             </li>
             <li class="nav-item">
-              <a class="navbar-brand" href="/contact">Contact Me</a>
+              <a class="navbar-brand" href="#">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="##"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="/contact">Contact Me</a>
             </li>
           </ul>
           <!-- Links -->
@@ -130,7 +141,64 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c37bff",endColorstr="#83b4ed",GradientType=1);">
           
 <br><br><br><br>
+<!--1st actor-->
+<div id="popup1" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a1}}</h1></br>
+  <p>{{bio1}}</p>
+</div>
 
+<!--2nd actor-->
+<div id="popup2" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a2}}</h1></br>
+  <p>{{bio2}}</p>
+</div>
+
+
+<!--3rd actor-->
+<div id="popup3" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a3}}</h1></br>
+  <p>{{bio3}}</p>
+</div>
+
+
+<!--4th actor-->
+<div id="popup4" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a4}}</h1></br>
+  <p>{{bio4}}</p>
+</div>
+
+
+<!--5th actor-->
+<div id="popup5" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a5}}</h1></br>
+  <p>{{bio5}}</p>
+</div>
+<!--6th actor-->
+<div id="popup6" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a6}}</h1></br>
+  <p>{{bio6}}</p>
+</div>
+
+<!--7th actor-->
+<div id="popup7" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a7}}</h1></br>
+  <p>{{bio7}}</p>
+</div>
+
+
+<!--8th actor-->
+<div id="popup8" class="popup">
+  <a href="##" class="close">&times;</a>
+  <h1>{{a8}}</h1></br>
+  <p>{{bio8}}</p>
+</div>
 
  
 
@@ -265,7 +333,6 @@
       <div class="text">
       
        <h1>Movie - {{mn0}}</h1><br>
-       <p>Cast - {{a1}},{{a2}},{{a3}},{{a4}},{{a5}}</p><br>
        <p>Genres - {{gener}}</p>
        <p>Release date - {{date}}</p>
 
@@ -287,7 +354,7 @@
               <figure><img src={{pp1}} class = "img-responsive" width = "60%" alt="">
                 <figcaption>
                   <p class="team_name">{{a1}}</p>
-                  <p class="team_title">as<br> {{char1}}</p>
+                  <p class="team_title">as<br> {{char1}}</br></br><a href="#popup1" class="btn">Know More </a></p>
                   <p class="team_description">
                    
                     </p>
@@ -300,7 +367,7 @@
               <figure><img src={{pp2}} class = "img-responsive" width = "60%" alt="">
                 <figcaption>
                   <p class="team_name">{{a2}}</p>
-                  <p class="team_title">as<br> {{char2}}</p>
+                  <p class="team_title">as<br> {{char2}}</br></br><a href="#popup2" class="btn">Know More </a></p>
                   <p class="team_description">
                     
                     </p>
@@ -313,7 +380,7 @@
               <figure><img src={{pp3}}  class = "img-responsive" width = "60%"alt="">
                 <figcaption>
                   <p class="team_name">{{a3}}</p>
-                  <p class="team_title">as<br> {{char3}}</p>
+                  <p class="team_title">as<br> {{char3}}</br></br><a href="#popup3" class="btn">Know More </a></p></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -324,7 +391,7 @@
               <figure><img src={{pp4}}  class = "img-responsive" width = "60%"alt="">
                 <figcaption>
                   <p class="team_name">{{a4}}</p>
-                  <p class="team_title">as<br> {{char4}}</p>
+                  <p class="team_title">as<br> {{char4}}</br></br><a href="#popup4" class="btn">Know More </a></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -339,7 +406,7 @@
               <figure><img src={{pp5}}  class = "img-responsive" width = "60%"alt="">
                 <figcaption>
                   <p class="team_name">{{a5}}</p>
-                  <p class="team_title">as<br> {{char5}}</p>
+                  <p class="team_title">as<br> {{char5}}</br></br><a href="#popup5" class="btn">Know More </a></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -350,7 +417,7 @@
               <figure><img src={{pp6}} class = "img-responsive" width = "60%" alt="">
                 <figcaption>
                   <p class="team_name">{{a6}}</p>
-                  <p class="team_title">as<br> {{char6}}</p>
+                  <p class="team_title">as<br> {{char6}}</br></br><a href="#popup6" class="btn">Know More </a></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -361,7 +428,7 @@
               <figure><img src={{pp7}}  class = "img-responsive" width = "60%"alt="">
                 <figcaption>
                   <p class="team_name">{{a7}}</p>
-                  <p class="team_title">as<br> {{char7}}</p>
+                  <p class="team_title">as<br> {{char7}}</br></br><a href="#popup7" class="btn">Know More </a></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -372,7 +439,7 @@
               <figure><img src={{pp8}}  class = "img-responsive" width = "60%"alt="">
                 <figcaption>
                   <p class="team_name">{{a8}}</p>
-                  <p class="team_title">as<br> {{char8}}</p>
+                  <p class="team_title">as<br> {{char8}}</br></br><a href="#popup8" class="btn">Know More </a></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -389,7 +456,7 @@
               <figure><img src={{mu1}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn1}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNavi()">Know more</span>
+                  <p class="team_title"><span class="btn" onclick="openNavi()">Know more</span>
                   </p>
                   <p class="team_description">
                   <div class=" text-center">
@@ -401,7 +468,7 @@
               <figure><img src={{mu2}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn2}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNav()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openNav()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -412,7 +479,7 @@
               <figure><img src={{mu3}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn3}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNava()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openNava()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -423,7 +490,7 @@
               <figure><img src={{mu4}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn4}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNavb()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openNavb()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -437,7 +504,7 @@
               <figure><img src={{mu5}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn5}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNavc()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openNavc()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -448,7 +515,7 @@
               <figure><img src={{mu6}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn6}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNavd()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openNavd()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -459,7 +526,7 @@
               <figure><img src={{mu7}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn7}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNave()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openNave()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -470,7 +537,7 @@
               <figure><img src={{mu8}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn8}}</p><br>
-                  <p class="team_title"><span style="font-size:25px;cursor:pointer" onclick="openNavf()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openNavf()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>

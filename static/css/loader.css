@@ -34,6 +34,7 @@ body {
 }
 
 .overlay .closebtn {
+  color: black;
   position: absolute;
   top: 30px;
   right: 45px;
@@ -42,9 +43,11 @@ body {
 
 @media screen and (max-height: 450px) {
   .overlay a {
+    color: black;
     font-size: 20px;
   }
   .overlay .closebtn {
+    color: black;
     font-size: 40px;
     top: 15px;
     right: 35px;
