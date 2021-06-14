@@ -1,5 +1,9 @@
 <img src="static/img/home.png">
-<img src=" images/HP.png">
-<img src="images/CA.png">
-<img src="images/RP.png">
-<img src="images/Foot.png">
+<img src="static/img/results.png">
+<img src="static/img/cast.png">
+<img src="static/img/cast2.png">
+<img src="static/img/cast_info.png">
+<img src="static/img/Recommended_movies.png">
+<img src="static/img/Recommended_movies_details.png">
+<img src="static/img/Recommended_movie_details.png">
+<img src="static/img/end_footer.png">
