@@ -88,7 +88,7 @@ def result(request):
             x.append(cast[i][3])
         for element in x:
             p = person.details(element)
-            y.append(p.biography)
+            y.append(p.biography[:900])
         actor1 = cast[0]
         actor2 = cast[1]
         actor3 = cast[2]
