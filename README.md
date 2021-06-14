@@ -1,6 +1,10 @@
-<h2>Movie Recommendation Project</h2></br>
+<h1>Movie Recommendation Project</h1></br>
 
-<h1>Search for a movie you like at Homepage.</h1>
+<p>You can see my project live Running at:
+
+<bold>https://aman-movie.herokuapp.com/</bold></p>
+
+<h2>Search for a movie you like at Homepage.</h2>
 <img src="static/img/home.png">
 <p>Here you will see the results.</p>
 <img src="static/img/results.png">
