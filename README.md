@@ -15,7 +15,7 @@
 <img src="static/img/cast_info.png">
 <h1>List of Recommended movies that you would like.</h1>
 <img src="static/img/Recommended_movies.png">
-<img src="static/img/Recommended_movies_details.png">
+<img src="static/img/Recommended_movie_details.png">
 <h1>Click on any Movie to Know more about it.</h1>
 <img src="static/img/Recommend_movie_details.png">
 <img src="static/img/end_footer.png"></br>
