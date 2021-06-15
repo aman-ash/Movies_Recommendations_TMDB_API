@@ -26,11 +26,11 @@ admin.site.index_title = "Welcome to this Portal"
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', views.home, name='home'),
-    path('result/', views.result, name='result'),
-    path('result/result/', views.result, name='result'),
-    path('trending/', trending.trending, name='trending'),
-    path('contact/', views.contact, name='contact'),
+    path('result', views.result, name='result'),
+    path('result/result', views.result, name='result'),
+    path('trending', trending.trending, name='trending'),
+    path('contact', views.contact, name='contact'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
