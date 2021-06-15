@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Movies import views
-
+from Movies import trending
+from django.conf.urls.static import static
+from django.conf import settings
 
 admin.site.site_header = "AMAN's Dashboard"
 admin.site.site_title = "Welcome to AMAN's Dashboard"
@@ -28,7 +30,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('result/', views.result, name='result'),
     path('result/result', views.result, name='result'),
-    path('test/', views.test, name='test'),
+    path('trending/', trending.trending, name='trending'),
     path('contact/', views.contact, name='contact'),
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

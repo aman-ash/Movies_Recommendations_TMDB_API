@@ -1,59 +1,54 @@
-body {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background: rgb(195, 123, 255);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(195, 123, 255, 1) 0%,
-    rgba(131, 180, 237, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(195, 123, 255, 1) 0%,
-    rgba(131, 180, 237, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(195, 123, 255, 1) 0%,
-    rgba(131, 180, 237, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c37bff",endColorstr="#83b4ed",GradientType=1);
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
 }
 
-#search {
-  height: 80px;
-  width: 80px;
-  border: solid 5px;
-  border-radius: 50px;
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: #f0f3ff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 35px;
+  justify-content: center;
+}
+
+#searchBox {
+  border-radius: 55px;
+  padding: 30px;
+  background: #f0f3ff;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+#googleIcon {
+  width: 50px;
+  cursor: pointer;
+}
+
+.fa-microphone {
   transition: 0.3s;
+  transition-delay: 0.3s;
 }
 
-#search-input {
-  height: 100%;
+input {
+  font-size: 20px;
   width: 0px;
-  font-size: 28px;
-  font-weight: 600;
-  background: none;
-  color: #fff;
-  border: none;
-  outline: 0;
-  visibility: hidden;
-  transition: 0.3s;
+  border: 0;
+  background: transparent;
+  outline: none;
+  transition: 2s;
 }
 
-#search.active {
-  width: 350px;
+.active input {
+  width: 500px;
+  padding: 12px 20px;
 }
 
-#search-input.active {
-  width: 260px;
-  margin-left: 16px;
-  visibility: visible;
+.active .mic-icon {
+  width: 30px;
 }

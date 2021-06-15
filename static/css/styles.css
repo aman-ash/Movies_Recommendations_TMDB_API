@@ -1,76 +1,75 @@
 .paragraph {
-    top: 300px;
+  top: 300px;
 }
 
 .container-fluid .row .col-md-5 .p {
-    top: 100;
+  top: 100;
 }
 
 .navbar {
-    background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 16, 16);
 }
 
 .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .top-nav-collapse {
-    background-color: #051742;
+  background-color: #051742;
 }
 
 @media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background-color: #24355C;
-    }
+  .navbar:not(.top-nav-collapse) {
+    background-color: #24355c;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
-    .navbar:not(.top-nav-collapse) {
-        background-color: #24355C;
-    }
+  .navbar:not(.top-nav-collapse) {
+    background-color: #24355c;
+  }
 }
 
 .upload-cv {
-    background-color: #ffffff;
-    width: 100%;
-    height: auto;
-    border: 2px dashed;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  border: 2px dashed;
 }
 
 .container1 {
-    border: 1px;
+  border: 1px;
 }
 
 .doc {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* background-color: rgba(141, 185, 223, 0.768); */
-    /* padding: 10px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: rgba(141, 185, 223, 0.768); */
+  /* padding: 10px; */
 }
 
 .DocumentIcon {
-    margin-left: 47%;
-    margin-right: 47%;
-    background-color: rgba(43, 158, 216, 0.483);
-    padding: 20px;
-    border-radius: 100%;
+  margin-left: 47%;
+  margin-right: 47%;
+  background-color: rgba(43, 158, 216, 0.483);
+  padding: 20px;
+  border-radius: 100%;
 }
-
 
 /* input {
   position: absolute;
@@ -82,171 +81,171 @@
 } */
 
 .file-field.big-2 .file-path-wrapper {
-    height: 3.7rem;
+  height: 3.7rem;
 }
 
 .file-field.big-2 .file-path-wrapper .file-path {
-    height: 3.5rem;
+  height: 3.5rem;
 }
 
 .h20 {
-    font-size: 30px;
-    color: White;
-    position: fixed;
-    top: 200px;
-    left: 410px;
-    width: 700px;
-    align-items: center;
-    border-radius: 5%;
+  font-size: 30px;
+  color: White;
+  position: fixed;
+  top: 200px;
+  left: 410px;
+  width: 700px;
+  align-items: center;
+  border-radius: 5%;
 }
 
 .concept-three .word {
-    display: flex;
-    align-items: center;
-    max-width: 500px;
-    margin: 200;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 200;
 }
 
 .concept-three .hover {
-    flex: 1;
-    display: grid;
-    height: calc(100vh - 10em);
-    grid: repeat(2, 2fr)/100%;
-    position: relative;
+  flex: 1;
+  display: grid;
+  height: calc(100vh - 10em);
+  grid: repeat(2, 2fr) / 100%;
+  position: relative;
 }
 
 .concept-three .hover div {
-    position: relative;
-    z-index: 5;
+  position: relative;
+  z-index: 5;
 }
 
-.concept-three .hover div:nth-child(1):hover~h1 {
-    margin-top: -10px;
+.concept-three .hover div:nth-child(1):hover ~ h1 {
+  margin-top: -10px;
 }
 
-.concept-three .hover div:nth-child(2):hover~h1 {
-    margin-top: -50px;
+.concept-three .hover div:nth-child(2):hover ~ h1 {
+  margin-top: -50px;
 }
 
 .concept-three h1 {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 50%;
-    margin-top: -30px;
-    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: 0;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -30px;
+  transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 0;
 }
 
 .concept-three p {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 10;
-    top: 60%;
-    margin-top: -30px;
-    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: 0;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 10;
+  top: 60%;
+  margin-top: -30px;
+  transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 0;
 }
 
 .concept-three a {
-    position: absolute;
-    top: 95%;
-    left: 15%;
-    z-index: 2;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font: normal 300 44px/1 'Josefin Sans', sans-serif;
-    text-align: center;
-    white-space: nowrap;
+  position: absolute;
+  top: 95%;
+  left: 15%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font: normal 300 44px/1 "Josefin Sans", sans-serif;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .concept-three a {
-    position: absolute;
-    margin: auto;
-    left: 10;
-    top: 80%;
-    z-index: 0;
+  position: absolute;
+  margin: auto;
+  left: 10;
+  top: 80%;
+  z-index: 0;
 }
 
 @keyframes message {
-    from,
-    to,
-    65% {
-        transform: translate(-50%, 0)
-    }
-    25% {
-        transform: translate(-50%, 60px)
-    }
-    26% {
-        transform: translate(-50%, -60px)
-    }
+  from,
+  to,
+  65% {
+    transform: translate(-50%, 0);
+  }
+  25% {
+    transform: translate(-50%, 60px);
+  }
+  26% {
+    transform: translate(-50%, -60px);
+  }
 }
 
 .concept-three .cont {
-    height: 17px;
-    margin: 60px auto;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    width: 320px;
-    height: 40px;
+  height: 17px;
+  margin: 60px auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 320px;
+  height: 40px;
 }
 
 .concept-three h5 {
-    margin: 12px 0;
-    left: 30%;
-    transform: translateX(-50%);
-    text-transform: uppercase;
-    font-weight: bold;
-    position: absolute;
-    top: 90%;
-    animation: message 2s cubic-bezier(0.645, .045, .355, 1) infinite;
+  margin: 12px 0;
+  left: 30%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  animation: message 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
 
 .concept-six {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .concept-six .word {
-    width: 550px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
+  width: 550px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
 }
 
 .concept-six .word:hover .char:nth-child(1) {
-    margin-top: -30px;
-    transform: rotate(-20deg);
+  margin-top: -30px;
+  transform: rotate(-20deg);
 }
 
 .concept-six .word:hover .char:nth-child(2) {
-    margin: -40px 0px 0 10px;
-    transform: rotate(5deg);
+  margin: -40px 0px 0 10px;
+  transform: rotate(5deg);
 }
 
 .concept-six .word:hover .char:nth-child(3) {
-    margin: 15px 0 0 10px;
-    transform: rotate(12deg);
+  margin: 15px 0 0 10px;
+  transform: rotate(12deg);
 }
 
 .concept-six .word:hover .char:nth-child(4) {
-    margin: -25px 0 0;
-    transform: rotate(5deg);
+  margin: -25px 0 0;
+  transform: rotate(5deg);
 }
 
 .concept-six .word:hover .char:nth-child(5) {
-    margin: -40px 5px 0;
-    transform: rotate(-10deg);
+  margin: -40px 5px 0;
+  transform: rotate(-10deg);
 }
 
 .concept-six .char {
-    flex: 1;
-    transition: 0.3s ease-in-out;
-    position: relative;
+  flex: 1;
+  transition: 0.3s ease-in-out;
+  position: relative;
 }

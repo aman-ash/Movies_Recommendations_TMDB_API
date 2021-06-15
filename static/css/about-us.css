@@ -1,218 +1,214 @@
 #about-us {
-    display: block;
-    width: 100%;
-    line-height: 1.6em;
+  display: block;
+  width: 100%;
+  line-height: 1.6em;
 }
 
 .disc {
-    margin-left: 60px;
-    margin-right: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .bg {
-    display: block;
-    padding-right: 100px;
+  display: block;
+  padding-right: 100px;
 }
 
 h2 {
-    margin-bottom: 40px;
-    margin-top: 60px;
-    padding-bottom: 40px;
-    font-size: 80px;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 1px solid #CCCCCC;
-    font-family: fantasy;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #cccccc;
+  font-family: fantasy;
 }
 
 #about-intro {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 #about-intro p {
-    margin: 20px 0 0 0;
-    padding: 0;
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 
 #about-intro p:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #team {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #team ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #team ul li {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #team ul li figure {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 #team ul li figure img {
-    padding: 9px;
-    border: 1px solid #CCCCCC;
+  padding: 9px;
+  border: 1px solid #cccccc;
 }
 
 .about-us #team ul li figure figcaption {
-    display: none;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 240px;
-    height: 200px;
-    overflow: hidden;
-    color: #FFFFFF;
-    background-color: #c92f2f;
-    background: hsla(0, 75%, 42%, 0.8);
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 240px;
+  height: 200px;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #c92f2f;
+  background: hsla(0, 75%, 42%, 0.8);
 }
 
 #team ul li:hover figure figcaption {
-    display: block;
+  display: block;
 }
 
 #team ul li figure figcaption p {
-    margin: 15px 15px 0 15px;
-    padding: 0px;
+  margin: 15px 15px 0 15px;
+  padding: 0px;
 }
 
 #team ul li figure figcaption p:first-child {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 #team ul li figure figcaption .team_name {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #team ul li figure figcaption .team_description {
-    text-align: justify;
-    font-weight: bold;
-    font-size: 5px;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 5px;
 }
 
 #team ul li figure figcaption .team_title {
-    margin: 0;
-    font-size: 20px;
-    line-height: normal;
+  margin: 0;
+  font-size: 20px;
+  line-height: bold;
 }
 
 #team ul li figure figcaption .tooltip {
-    position: center;
-    display: inline-block;
-    border-bottom: 3px dotted black;
+  position: center;
+  display: inline-block;
+  border-bottom: 3px dotted black;
 }
 
 #team ul li figure figcaption .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 500px;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
+  visibility: hidden;
+  width: 500px;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
 }
 
 #team ul li figure figcaption .tooltip:hover .tooltiptext {
-    color: black;
-    visibility: visible;
+  color: black;
+  visibility: visible;
 }
 
 #con {
-    font-size: 1rem;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    min-height: 100vh;
-    background: lighten(#0E76A8, 45%);
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: lighten(#0e76a8, 45%);
 }
 
 .btn-linkedin {
-    background: #0E76A8;
-    border-radius: 0;
-    color: #fff;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #084461;
+  background: #0e76a8;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #084461;
 }
 
 .btn-linkedin:link,
 .btn-linkedin:visited {
-    color: #fff;
+  color: #fff;
 }
 
 .btn-linkedin:active,
 .btn-linkedin:hover {
-    background: #084461;
-    color: #fff;
+  background: #084461;
+  color: #fff;
 }
 
 .concept-two {
-    top: 20%;
-    display: grid;
-    grid: 100%/repeat(10, 1fr);
-    padding: 7em 15em;
+  top: 20%;
+  display: grid;
+  grid: 100% / repeat(10, 1fr);
+  padding: 7em 15em;
 }
 
 .concept-two .hover {
-    position: relative;
-    display: grid;
-    place-items: center;
+  position: relative;
+  display: grid;
+  place-items: center;
 }
 
 .concept-two h1 {
-    font-size: 4em;
-    text-align: 0 2px 2px;
-    -webkit-text-stroke: 8px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 4em;
+  text-align: 0 2px 2px;
+  -webkit-text-stroke: 8px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .concept-two .hover:hover h1 {
-    transform: scale(1.5);
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 4px transparent;
-    text-shadow: 0 10px 20px rgba(10, 10, 10, 0.986);
+  transform: scale(1.5);
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 4px transparent;
+  text-shadow: 0 10px 20px rgba(10, 10, 10, 0.986);
 }
-
 
 /* Dashed border */
 
 hr.dashed {
-    border-top: 3px dashed #bbb;
+  border-top: 3px dashed #bbb;
 }
-
 
 /* Dotted border */
 
 hr.dotted {
-    border-top: 3px dotted #bbb;
+  border-top: 3px dotted #bbb;
 }
-
 
 /* Solid border */
 
 hr.solid {
-    border-top: 3px solid #bbb;
+  border-top: 3px solid #bbb;
 }
-
 
 /* Rounded border */
 
 hr.rounded {
-    border-top: 3px solid #bbb;
-    border-radius: 1px;
+  border-top: 3px solid #bbb;
+  border-radius: 1px;
 }

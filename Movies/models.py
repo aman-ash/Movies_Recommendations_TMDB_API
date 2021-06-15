@@ -12,3 +12,10 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name + ' - ' + self.email
+
+
+class Movie_name(models.Model):
+    movie_name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.movie_name
