@@ -15,8 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from Movies import views
-from Movies import trending
+from Movies import views, trending, trending_tv
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -29,8 +28,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('result/', views.result, name='result'),
+    path('result/result', views.result, name='result'),
+    path('trending/', trending.trending, name='trending'),
+    path('trending_tv/', trending_tv.trending_tv, name='trending_tv'),
     path('contact/', views.contact, name='contact'),
-    path('result/result/', views.result, name='result'),
-    path('trending', trending.trending, name='trending'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -58,7 +58,7 @@
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/contact.js' %}"></script>
-    <script src="{% static 'js/loader.js' %}"></script>
+    <script src="{% static 'js/trending_info.js' %}"></script>
 
     <link
       rel="stylesheet"
@@ -103,18 +103,18 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/"></a>
-            </li> 
-            <li class="nav-item">
-              <a class="navbar-brand" href="/result">Results</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="##"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/trending">Trending Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/trending_tv">Trending TV Shows</a>
+              <a class="nav-link" href="##"></a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Trending TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="##"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link"href="/contact">Contact Me</a>
@@ -147,434 +147,315 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c37bff",endColorstr="#83b4ed",GradientType=1);">
           
 <br><br><br><br>
-<!--1st actor-->
-<div id="popup1" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1>{{a1}}</h1></br>
-  <p>{{bio1}}</p>
-</div>
 
-<!--2nd actor-->
-<div id="popup2" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1 >{{a2}}</h1></br>
-  
-<p >{{bio2}}</p>
-</textarea>
-</div>
-
-
-<!--3rd actor-->
-<div id="popup3" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1>{{a3}}</h1></br>
-  <p >{{bio3}}</p>
-</div>
-
-
-<!--4th actor-->
-<div id="popup4" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1>{{a4}}</h1></br>
-  <p>{{bio4}}</p>
-</div>
-
-
-<!--5th actor-->
-<div id="popup5" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1>{{a5}}</h1></br>
-  <p>{{bio5}}</p>
-</div>
-<!--6th actor-->
-<div id="popup6" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1>{{a6}}</h1></br>
-  <p>{{bio6}}</p>
-</div>
-
-<!--7th actor-->
-<div id="popup7" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1>{{a7}}</h1></br>
-  <p>{{bio7}}</p>
-</div>
-
-
-<!--8th actor-->
-<div id="popup8" class="popup">
-  <a href="##" class="close">&times;</a>
-  <h1>{{a8}}</h1></br>
-  <p>{{bio8}}</p>
-</div>
-
- 
 
 
  <!--1st movie-->
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavi()">&times;</a>
+<div id="a" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closea()">&times;</a>
   <div class="overlay-content">
      <h2> {{mn1}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd1}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd1}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen1}}</h1>
      <h1>Cast :&nbsp; {{cast1}}, {{cast2}}, {{cast3}}, {{cast4}}, {{cast5}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md1}} 
+     {{d1}} 
      </p>
   </div>
 </div>
 
 
 <!--2nd movie-->
-<div id="my" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div id="b" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeb()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn2}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd2}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd2}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen2}}</h1>
      <h1>Cast :&nbsp; {{cast6}}, {{cast7}}, {{cast8}}, {{cast9}}, {{cast10}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md2}} 
+     {{d2}} 
      </p>
   </div>
 </div>
 
 
 <!--3rd movie-->
-<div id="mya" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNava()">&times;</a>
+<div id="c" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closec()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn3}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd3}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd3}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen3}}</h1>
      <h1>Cast :&nbsp; {{cast11}}, {{cast12}}, {{cast13}}, {{cast14}}, {{cast15}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md3}} 
+     {{d3}} 
   </div>
 </div>
 
 
 <!--4th movie-->
-<div id="myb" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavb()">&times;</a>
+<div id="d" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closed()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn4}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd4}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd4}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen1}}</h1>
      <h1>Cast :&nbsp; {{cast16}}, {{cast17}}, {{cast18}}, {{cast19}}, {{cast20}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md4}} 
+     {{d4}} 
   </div>
 </div>
 
 
 <!--5th movie-->
-<div id="myc" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavc()">&times;</a>
+<div id="e" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closee()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn5}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd5}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd5}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen5}}</h1>
      <h1>Cast :&nbsp; {{cast21}}, {{cast22}}, {{cast23}}, {{cast24}}, {{cast25}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md5}} 
+     {{d5}} 
   </div>
 </div>
 
 
 <!--6th movie-->
-<div id="myd" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavd()">&times;</a>
+<div id="f" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closef()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn6}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd6}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd6}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen6}}</h1>
      <h1>Cast :&nbsp; {{cast26}}, {{cast27}}, {{cast28}}, {{cast29}}, {{cast30}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md6}} 
+     {{d6}} 
   </div>
 </div>
 
 
 <!--7th movie-->
-<div id="mye" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNave()">&times;</a>
+<div id="g" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeg()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn7}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd7}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd7}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen7}}</h1>
      <h1>Cast :&nbsp; {{cast31}}, {{cast32}}, {{cast33}}, {{cast34}}, {{cast35}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md7}} 
+     {{d7}} 
   </div>
 </div>
 
 
 <!--8th movie-->
-<div id="myf" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavf()">&times;</a>
+<div id="h" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeh()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn8}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd8}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd8}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen8}}</h1>
      <h1>Cast :&nbsp; {{cast36}}, {{cast37}}, {{cast38}}, {{cast39}}, {{cast40}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md8}} 
+     {{d8}} 
   </div>
 </div>
 
 <!--9th movie-->
-<div id="myg" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavg()">&times;</a>
+<div id="i" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closei()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn9}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd9}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd9}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen9}}</h1>
      <h1>Cast :&nbsp; {{cast41}}, {{cast42}}, {{cast43}}, {{cast44}}, {{cast45}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md9}} 
+     {{d9}} 
   </div>
 </div>
 
 
 <!--10th movie-->
-<div id="myh" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavh()">&times;</a>
+<div id="j" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closej()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn10}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd10}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd10}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen10}}</h1>
      <h1>Cast :&nbsp; {{cast46}}, {{cast47}}, {{cast48}}, {{cast49}}, {{cast50}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md10}} 
+     {{d10}} 
   </div>
 </div>
 
 <!--11th movie-->
-<div id="myhi" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavhi()">&times;</a>
+<div id="k" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closek()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn11}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd11}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd11}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen11}}</h1>
      <h1>Cast :&nbsp; {{cast51}}, {{cast52}}, {{cast53}}, {{cast54}}, {{cast55}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md11}} 
+     {{d11}} 
   </div>
 </div>
 
 <!--12th movie-->
-<div id="myj" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavj()">&times;</a>
+<div id="l" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closel()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn12}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd12}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd12}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen12}}</h1>
      <h1>Cast :&nbsp; {{cast56}}, {{cast57}}, {{cast58}}, {{cast59}}, {{cast60}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md12}} 
+     {{d12}} 
   </div>
 </div>
 
 <!--13th movie-->
-<div id="myk" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavk()">&times;</a>
+<div id="m" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closem()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn13}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd13}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd13}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen13}}</h1>
      <h1>Cast :&nbsp; {{cast61}}, {{cast62}}, {{cast63}}, {{cast64}}, {{cast65}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md13}} 
+     {{d13}} 
   </div>
 </div>
 
 
 <!--14th movie-->
-<div id="myl" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavl()">&times;</a>
+<div id="n" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closen()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn14}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd14}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd14}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen14}}</h1>
      <h1>Cast :&nbsp; {{cast66}}, {{cast67}}, {{cast68}}, {{cast69}}, {{cast70}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md14}} 
+     {{d14}} 
   </div>
 </div>
 
 
 <!--15th movie-->
-<div id="mym" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavm()">&times;</a>
+<div id="o" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeo()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn15}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd15}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd15}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen15}}</h1>
      <h1>Cast :&nbsp; {{cast71}}, {{cast72}}, {{cast73}}, {{cast74}}, {{cast75}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md15}} 
+     {{d15}} 
   </div>
 </div>
 
 
 <!--16th movie-->
-<div id="myn" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavn()">&times;</a>
+<div id="p" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closep()">&times;</a>
   <div class="overlay-content">
       <h2> {{mn16}} </h2>
-     <h1>Release Date &nbsp; : &nbsp;{{rd16}} </h1>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd16}} </h1>
      <h1>Genres&nbsp; :&nbsp; {{gen16}}</h1>
      <h1>Cast :&nbsp; {{cast76}}, {{cast77}}, {{cast78}}, {{cast79}}, {{cast80}}</h1><br><br>
      <h3>Overview : </h3>  
     <p>
-     {{md16}} 
+     {{d16}} 
   </div>
 </div>
 
 
+<!--17th movie-->
+<div id="q" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeq()">&times;</a>
+  <div class="overlay-content">
+      <h2> {{mn17}} </h2>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd17}} </h1>
+     <h1>Genres&nbsp; :&nbsp; {{gen17}}</h1>
+     <h1>Cast :&nbsp; {{cast81}}, {{cast82}}, {{cast83}}, {{cast84}}, {{cast85}}</h1><br><br>
+     <h3>Overview : </h3>  
+    <p>
+     {{d17}} 
+  </div>
+</div>
 
-     
 
-  <div class="container">
-    <div class="image">
-      <img src={{mu0}}>
-    </div>
-      <div class="text">
-      
-       <h1>Movie - {{mn0}}</h1><br>
-       <p>Genres - {{gener}}</p>
-       <p>Release date - {{date}}</p>
+<!--18th movie-->
+<div id="r" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closer()">&times;</a>
+  <div class="overlay-content">
+      <h2> {{mn18}} </h2>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd18}} </h1>
+     <h1>Genres&nbsp; :&nbsp; {{gen18}}</h1>
+     <h1>Cast :&nbsp; {{cast86}}, {{cast87}}, {{cast88}}, {{cast89}}, {{cast90}}</h1><br><br>
+     <h3>Overview : </h3>  
+    <p>
+     {{d18}} 
+  </div>
+</div>
 
-       <p>OverView - <br><br>{{md0}}</p><br>
-      </div>   
-  </div> 
+
+<!--19th movie-->
+<div id="s" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closes()">&times;</a>
+  <div class="overlay-content">
+      <h2> {{mn19}} </h2>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd19}} </h1>
+     <h1>Genres&nbsp; :&nbsp; {{gen19}}</h1>
+     <h1>Cast :&nbsp; {{cast91}}, {{cast92}}, {{cast93}}, {{cast94}}, {{cast95}}</h1><br><br>
+     <h3>Overview : </h3>  
+    <p>
+     {{d19}} 
+  </div>
+</div>
+
+
+<!--20th movie-->
+<div id="t" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closet()">&times;</a>
+  <div class="overlay-content">
+      <h2> {{mn20}} </h2>
+     <h1>1st-Aired &nbsp; : &nbsp;{{rd20}} </h1>
+     <h1>Genres&nbsp; :&nbsp; {{gen20}}</h1>
+     <h1>Cast :&nbsp; {{cast96}}, {{cast97}}, {{cast98}}, {{cast99}}, {{cast100}}</h1><br><br>
+     <h3>Overview : </h3>  
+    <p>
+     {{d20}} 
+  </div>
+</div>
+
 
   <div class="wrapper row2">
     <div id="container" class="clear">
        <div id="con" class="clear">
           <section id="about-intro" class="clear">
-          <section id="team"><br><br><br>
-  
-           <h1 style="text-align:center">CAST</h1> <br><br> 
-           <hr class="rounded">
-
-          <ul class="clear">           
-             <li class="one_third">
-              <figure><img src={{pp1}} class = "img-responsive" width = "60%" alt="">
-                <figcaption>
-                  <p class="team_name">{{a1}}</p>
-                  <p class="team_title">as<br> {{char1}}</br></br><a href="#popup1" class="btn">Know More </a></p>
-                  <p class="team_description">
-                   
-                    </p>
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>
-              <li class="one_third">
-              <figure><img src={{pp2}} class = "img-responsive" width = "60%" alt="">
-                <figcaption>
-                  <p class="team_name">{{a2}}</p>
-                  <p class="team_title">as<br> {{char2}}</br></br><a href="#popup2" class="btn">Know More </a></p>
-                  <p class="team_description">
-                    
-                    </p>
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>
-             <li class="one_third">
-              <figure><img src={{pp3}}  class = "img-responsive" width = "60%"alt="">
-                <figcaption>
-                  <p class="team_name">{{a3}}</p>
-                  <p class="team_title">as<br> {{char3}}</br></br><a href="#popup3" class="btn">Know More </a></p></p>
-                  <p class="team_description">
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>
-             <li class="one_third">
-              <figure><img src={{pp4}}  class = "img-responsive" width = "60%"alt="">
-                <figcaption>
-                  <p class="team_name">{{a4}}</p>
-                  <p class="team_title">as<br> {{char4}}</br></br><a href="#popup4" class="btn">Know More </a></p>
-                  <p class="team_description">
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>
-            
-             
-          </ul>          
-          <ul class="clear">            
-            <li class="one_third">
-              <figure><img src={{pp5}}  class = "img-responsive" width = "60%"alt="">
-                <figcaption>
-                  <p class="team_name">{{a5}}</p>
-                  <p class="team_title">as<br> {{char5}}</br></br><a href="#popup5" class="btn">Know More </a></p>
-                  <p class="team_description">
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>
-              <li class="one_third">
-              <figure><img src={{pp6}} class = "img-responsive" width = "60%" alt="">
-                <figcaption>
-                  <p class="team_name">{{a6}}</p>
-                  <p class="team_title">as<br> {{char6}}</br></br><a href="#popup6" class="btn">Know More </a></p>
-                  <p class="team_description">
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>
-             <li class="one_third">
-              <figure><img src={{pp7}}  class = "img-responsive" width = "60%"alt="">
-                <figcaption>
-                  <p class="team_name">{{a7}}</p>
-                  <p class="team_title">as<br> {{char7}}</br></br><a href="#popup7" class="btn">Know More </a></p>
-                  <p class="team_description">
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>
-             <li class="one_third">
-              <figure><img src={{pp8}}  class = "img-responsive" width = "60%"alt="">
-                <figcaption>
-                  <p class="team_name">{{a8}}</p>
-                  <p class="team_title">as<br> {{char8}}</br></br><a href="#popup8" class="btn">Know More </a></p>
-                  <p class="team_description">
-                  <div class=" text-center">
-                  </div> </p>
-                </figcaption>
-              </figure>
-            </li>   
-          </ul>          
-           <hr class="rounded">
-           <h1 style="text-align:center">Movies You Would Like</h1><br>
+          <section id="team">
+          <h2>Trending TV Shows Now</h2>
+          </br></br><br>
+     
 
 
           <ul class="clear">           
@@ -582,7 +463,7 @@
               <figure><img src={{mu1}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn1}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavi()">Know more</span>
+                  <p class="team_title"><span class="btn" onclick="opena()">Know more</span>
                   </p>
                   <p class="team_description">
                   <div class=" text-center">
@@ -594,7 +475,7 @@
               <figure><img src={{mu2}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn2}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNav()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openb()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -605,7 +486,7 @@
               <figure><img src={{mu3}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn3}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNava()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openc()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -616,7 +497,7 @@
               <figure><img src={{mu4}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn4}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavb()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="opend()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -630,7 +511,7 @@
               <figure><img src={{mu5}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn5}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavc()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="opene()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -641,7 +522,7 @@
               <figure><img src={{mu6}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn6}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavd()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openf()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -652,7 +533,7 @@
               <figure><img src={{mu7}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn7}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNave()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openg()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -663,7 +544,7 @@
               <figure><img src={{mu8}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn8}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavf()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openh()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -678,7 +559,7 @@
               <figure><img src={{mu9}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn9}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavg()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openi()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -689,7 +570,7 @@
               <figure><img src={{mu10}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn10}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavh()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openj()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -700,7 +581,7 @@
               <figure><img src={{mu11}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn11}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavhi()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openk()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -711,7 +592,7 @@
               <figure><img src={{mu12}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn12}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavj()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openl()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -725,7 +606,7 @@
               <figure><img src={{mu13}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn13}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavk()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openm()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -736,7 +617,7 @@
               <figure><img src={{mu14}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn14}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavl()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openn()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -747,7 +628,7 @@
               <figure><img src={{mu15}}  class = "img-responsive" width = "100%"alt="">
                 <figcaption>
                   <p class="team_name">{{mn15}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavm()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openo()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
@@ -758,7 +639,56 @@
               <figure><img src={{mu16}} class = "img-responsive" width = "100%" alt="">
                 <figcaption>
                   <p class="team_name">{{mn16}}</p><br>
-                  <p class="team_title"><span class="btn" onclick="openNavn()">Know more</span></p>
+                  <p class="team_title"><span class="btn" onclick="openp()">Know more</span></p>
+                  <p class="team_description">
+                  <div class=" text-center">
+                  </div> </p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+
+
+          <ul class="clear">
+
+             <li class="one_third">
+              <figure><img src={{mu17}} class = "img-responsive" width = "100%" alt="">
+                <figcaption>
+                  <p class="team_name">{{mn17}}</p><br>
+                  <p class="team_title"><span class="btn" onclick="openq()">Know more</span></p>
+                  <p class="team_description">
+                  <div class=" text-center">
+                  </div> </p>
+                </figcaption>
+              </figure>
+            </li>
+             <li class="one_third">
+              <figure><img src={{mu18}}  class = "img-responsive" width = "100%"alt="">
+                <figcaption>
+                  <p class="team_name">{{mn18}}</p><br>
+                  <p class="team_title"><span class="btn" onclick="openr()">Know more</span></p>
+                  <p class="team_description">
+                  <div class=" text-center">
+                  </div> </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><img src={{mu19}} class = "img-responsive" width = "100%" alt="">
+                <figcaption>
+                  <p class="team_name">{{mn19}}</p><br>
+                  <p class="team_title"><span class="btn" onclick="opens()">Know more</span></p>
+                  <p class="team_description">
+                  <div class=" text-center">
+                  </div> </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><img src={{mu20}}  class = "img-responsive" width = "100%"alt="">
+                <figcaption>
+                  <p class="team_name">{{mn20}}</p><br>
+                  <p class="team_title"><span class="btn" onclick="opent()">Know more</span></p>
                   <p class="team_description">
                   <div class=" text-center">
                   </div> </p>
