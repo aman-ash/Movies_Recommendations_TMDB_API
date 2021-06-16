@@ -7,33 +7,31 @@
 
     {% load static %}
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/search.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/alert.css' %}"
-    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/3d.css' %}" />
+
     <script src="{% static 'js/audio.js' %}"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <div id="sound"></div>
-
-    <h1>Search For a Movie you Like</h1>
-
+    <h1>Search For A Movie You Like</h1>
     {%csrf_token %}
-
-    <form action="result">
-      <input type="text" name="movie" placeholder="Search.." required /><br />
-
-      <button onclick="play1();" type="submit" class="btn first">Search</button>
-    </form>
+    <div id="cover">
+      <form action="result">
+        <div class="tb">
+          <div class="td">
+            <input type="text" name="movie" placeholder="Search" required />
+          </div>
+          <div class="td" id="s-cover">
+            <button type="submit">
+              <div id="s-circle"></div>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <h2>{{not_found}}</h2>
   </body>
