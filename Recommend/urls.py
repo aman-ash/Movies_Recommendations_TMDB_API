@@ -19,7 +19,6 @@ from Movies import views
 from Movies import trending
 from django.conf.urls.static import static
 from django.conf import settings
-from django.core import url, serve
 
 admin.site.site_header = "AMAN's Dashboard"
 admin.site.site_title = "Welcome to AMAN's Dashboard"
