@@ -33,9 +33,5 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('result/result/', views.result, name='result'),
     path('trending', trending.trending, name='trending'),
-    url(r'^static/(?P<path>.*)$', serve,
-        {'document_root': settings.STATIC_ROOT}),
-    url(r'^media/(?P<path>.*)$', serve,
-        {'document_root': settings.MEDIA_ROOT}),
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
