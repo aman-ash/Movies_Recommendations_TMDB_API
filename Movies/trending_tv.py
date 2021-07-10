@@ -19,11 +19,26 @@ nme = []
 
 
 for i in popular:
-    name = i.name
-    ids = i.id
-    air = i.first_air_date
-    pp = i.poster_path
-    ow = i.overview
+    if i.name:
+        name = i.name
+    else:
+        name = ''
+    if i.id:
+        ids = i.id
+    else:
+        ids = ''
+    if i.first_air_date:
+        air = i.first_air_date
+    else:
+        air = ''
+    if i.poster_path:
+        pp = i.poster_path
+    else:
+        pp = ''
+    if i .overview:
+        ow = i.overview
+    else:
+        ow = ''
     z = [name, air, img1+pp, ow]
 
     nme.append(ids)
