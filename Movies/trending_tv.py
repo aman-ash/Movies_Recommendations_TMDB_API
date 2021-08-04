@@ -28,7 +28,7 @@ for i in popular:
     else:
         ids = ''
     if i.first_air_date:
-        air = i.first_air_date
+        air = i.air_date
     else:
         air = ''
     if i.poster_path:
