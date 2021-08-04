@@ -27,7 +27,7 @@ for i in popular:
         ids = i.id
     else:
         ids = ''
-    if i.first_air_date:
+    if i.air_date:
         air = i.air_date
     else:
         air = ''
