@@ -27,10 +27,6 @@ for i in popular:
         ids = i.id
     else:
         ids = ''
-    if i.air_date:
-        air = i.air_date
-    else:
-        air = ''
     if i.poster_path:
         pp = i.poster_path
     else:
@@ -39,6 +35,7 @@ for i in popular:
         ow = i.overview
     else:
         ow = ''
+    air = ''
     z = [name, air, img1+pp, ow]
 
     nme.append(ids)
